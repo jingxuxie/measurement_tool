@@ -1,0 +1,174 @@
+/* ---------------------------------------------------------------------------
+
+    WARNING! File created programmatically. All changes made in this file will be lost!
+
+    Created by the qtsass compiler v0.3.0
+
+    The definitions are in the "qdarkstyle.qss._styles.scss" module
+
+--------------------------------------------------------------------------- */
+/* Light Style - QDarkStyleSheet ------------------------------------------ */
+/*
+
+See Qt documentation:
+
+  - https://doc.qt.io/qt-5/stylesheet.html
+  - https://doc.qt.io/qt-5/stylesheet-reference.html
+  - https://doc.qt.io/qt-5/stylesheet-examples.html
+
+--------------------------------------------------------------------------- */
+/* Reset elements ------------------------------------------------------------
+
+Resetting everything helps to unify styles across different operating systems
+
+--------------------------------------------------------------------------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-style: none;
+  border-image: none;
+  outline: 0;
+}
+
+/* specific reset for elements inside QToolBar */
+QToolBar * {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* QWidget ----------------------------------------------------------------
+
+--------------------------------------------------------------------------- */
+QWidget {
+  background-color: #FAFAFA;
+  border: 0px solid #C9CDD0;
+  padding: 0px;
+  color: #19232D;
+  selection-background-color: #9FCBFF;
+  selection-color: #19232D;
+}
+
+QWidget:disabled {
+  background-color: #FAFAFA;
+  color: #788D9C;
+  selection-background-color: #DAEDFF;
+  selection-color: #788D9C;
+}
+
+QWidget::item:selected {
+  background-color: #9FCBFF;
+}
+
+QWidget::item:hover:!selected {
+  background-color: #73C7FF;
+}
+
+/* QSlider ----------------------------------------------------------------
+
+https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qslider
+
+--------------------------------------------------------------------------- */
+QSlider{
+ background-color: none;
+}
+
+QSlider:disabled {
+  background: #FAFAFA;
+}
+
+QSlider:focus {
+  border: none;
+}
+
+QSlider::groove:horizontal {
+  background: #C9CDD0;
+  border: 1px solid #C9CDD0;
+  height: 4px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+QSlider::groove:vertical {
+  background: #C9CDD0;
+  border: 1px solid #C9CDD0;
+  width: 4px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+
+
+
+
+QSlider::handle:horizontal {
+  background: #788D9C;
+  border: 1px solid #C9CDD0;
+  width: 8px;
+  height: 8px;
+  margin: -8px 0px;
+  border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+  background: #9FCBFF;
+  border: 1px solid #9FCBFF;
+}
+
+QSlider::handle:horizontal:focus {
+  border: 1px solid #73C7FF;
+}
+
+QSlider::handle:vertical {
+  background: #788D9C;
+  border: 1px solid #C9CDD0;
+  width: 8px;
+  height: 8px;
+  margin: 0 -8px;
+  border-radius: 4px;
+}
+
+QSlider::handle:vertical:hover {
+  background: #9FCBFF;
+  border: 1px solid #9FCBFF;
+}
+
+QSlider::handle:vertical:focus {
+  border: 1px solid #73C7FF;
+}
+
+QSlider::sub-page:horizontal {
+  background: #9FCBFF;
+  border: 1px solid #C9CDD0;
+  height: 4px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+  background: #DAEDFF;
+}
+
+QSlider::add-page:vertical {
+  background: none;
+  border: none;
+  width: 4px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+
+QRangeSlider {
+      qproperty-barColor: #9FCBFF;
+
+}
+
+
+
+
+
+
+
+
+
+
